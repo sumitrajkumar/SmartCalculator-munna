@@ -1,11 +1,10 @@
-import sys
 from module import *
 
-print(responses[0])
-print(responses[1])
+for i in range(2):
+    print(responses[i])
+
 while True:
-    print()
-    text=input("what you want me to do  ")
+    text=input("\nwhat you want me to do  ")
     for word in text.split(' '):
         if word.upper() in operations.keys():
             try:

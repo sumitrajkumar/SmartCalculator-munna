@@ -1,4 +1,4 @@
-responses=["Welcome to smart ai","My name is munna","Thanks","sorry, this is beyond my ability"]
+responses=["Welcome to smart ai","My name is munna","Thanks","sorry, this is beyond my ability",]
 def extract_numbers_from_text(text):
     l=[]
     for t in text.split(' '):
@@ -35,5 +35,5 @@ def myname():
     print(responses[1])
 def sorry():
     print(responses[3])
-operations={"PLUS":add,"+":add,"ADD":add,"LCM":lcm,"HCF":hcf,"ADDITION":add,"SUM":add,"MINUS":sub,"SUBTRACTION":sub,"SUBTRACT":sub,"DIFFERENCE":sub,"PRODUCT":multiply,"MULTIPLICATION":multiply,"MULTIPLY":multiply,"DIVIDE":division,"DIVISION":division}
+operations={"PLUS":add,"+":add,"ADD":add,"LCM":lcm,"HCF":hcf,"ADDITION":add,"SUM":add,"MINUS":sub, "-": sub, "SUBTRACTION":sub,"SUBTRACT":sub,"DIFFERENCE":sub,"PRODUCT":multiply,"MULTIPLICATION":multiply, 'x': multiply, "*": multiply, "MULTIPLY":multiply, '/': division, "DIVIDE":division,"DIVISION":division}
 commands={"NAME":myname,"END":end,"EXIT":end,"CLOSE":end}
